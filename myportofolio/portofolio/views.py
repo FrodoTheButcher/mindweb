@@ -19,4 +19,13 @@ def main(request):
                 
                             fail_silently=False,
                         )
+        send_mail(
+               "Multumim pentru mesaj " + name + "!",
+                        "O sa revenim cu detalii pentru intrebarea dvs curand! ",
+                        settings.EMAIL_HOST_USER,
+                            [contact],
+                
+                            fail_silently=False,
+                        )
+        return render(request,"main.html")
     return render(request,"main.html")

@@ -794,11 +794,11 @@ border-radius: 100%;
                                 </div>
                                 <div class="field">
                                     <h3 id="personal">Personal contact</h3>
-                                    <small>Number :0776774290</small>
+                                    <small>Number :0775664290</small>
                                     <small>Email:robifodor1234576@yahoo.com</small>
                                     <small>Gmail:robifodor5519@gmail.com</small>
                                     <small>Facebook:robifodor19</small>
-                                    <small>Instagram:robifodor_19</small>
+                                    <small>Instagram:robi.fodor.9</small>
                                 </div>
                                 <div class="field">
                                     <h3 id="timing">Timing</h3>
@@ -808,6 +808,7 @@ border-radius: 100%;
                                 </div>
                                 <div class="field" id="question">
                                     <form action="" method="POST">
+                                        {% csrf_token %}
                                     <p>Enter your questions</p>
                                     <div class="field">
                                         <input name="name" placeholder=""  type="text">
@@ -816,9 +817,9 @@ border-radius: 100%;
 
                                     </div>
                                     <div class="field">
-                                        <input placeholder="" type="text">
+                                        <input name="contact" placeholder="" type="email">
                                         
-                                        <label name="contact" for="">Gmail...</label>
+                                        <label  for="">Gmail...</label>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 11L3 6v10h10v2H3q-.825 0-1.413-.588T1 16V4q0-.825.588-1.413T3 2h16q.825 0 1.413.588T21 4v5h-2V6l-8 5Zm0-2l8-5H3l8 5Zm8 13q-1.65 0-2.825-1.175T15 18v-4.5q0-1.05.725-1.775T17.5 11q1.05 0 1.775.725T20 13.5V18h-2v-4.5q0-.2-.15-.35T17.5 13q-.2 0-.35.15t-.15.35V18q0 .825.588 1.413T19 20q.825 0 1.413-.588T21 18v-4h2v4q0 1.65-1.175 2.825T19 22ZM3 6V4v12V6Z"/></svg>
 
                                     </div><div class="field">
@@ -852,14 +853,14 @@ border-radius: 100%;
                              </div>
                              <div class="field">
                                 <h3>Friendship</h3>
-                                <small>We are at a single call to become partners</small>
+                                <small>We are at a single call to become partners.</small>
                                  <small>Partners in creating your dream </small>
                                <small>And to stay together for future projects</small>
                              </div>
                              <div class="field">
                                 <h3>PRICES!</h3>
                                 <small>Stop selling your car for nothing!</small>
-                                 <small>With only 5-10 E/webisite with a full back-end </small>
+                                 <small>With only 5-10 E/website with a full back-end </small>
                                <small>And a spectacular front end you can get it!</small>
                              </div>
                            
