@@ -166,9 +166,11 @@
         font-size: 2.3rem;
         position: relative;
         bottom: 3rem;
-     
+        font-family:cursive;
+        
     }
     #fourth_nav h4{
+        font-family:cursive;
         color: white;
         text-align: center;
         margin: 2rem;
@@ -258,7 +260,7 @@ height: 2px;
 
 
 .hide_page_up{
-    transform: translateY(-900px)!important;
+    transform: translateY(-1500px)!important;
     filter: blur(100%);
     opacity: 0;
     visibility: none;
@@ -269,7 +271,12 @@ height: 2px;
     background-color: white !important;
     background-image:linear-gradient(transparent,rgba(1, 1, 1, 0.33)), url("../static/images/bout_us.webp") !important;
     transition: all 0.2;
-
+}
+.delete{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    pointer-events: none;
 }
 
 
@@ -329,6 +336,7 @@ height: 2px;
     left: 0;
     top: 0;
     right: 0;
+    pointer-events: none;
     bottom: 0;
     z-index: 150;
     opacity: 0;
@@ -549,9 +557,27 @@ width: 15px;
 height: 15px;
 display: table;
 bottom: 1rem;
+opacity: 0.4;
 left: 1rem;
 }
-
+#first_nav .body_contact .field label{
+    position: absolute;
+color: red;
+opacity: 0.5;
+left: 7rem;
+font-size: 0.8rem;
+transition: all 0.3s;
+margin-top: 0.4rem;
+pointer-events: none;
+}
+#first_nav .body_contact .field textarea{
+    position: relative;
+background-color: transparent;
+border-color: #681e1e;
+height: 6rem;
+margin-top: 1rem;
+transition: all 0.3s;
+}
 #first_nav .header_contact{
     z-index: 500;
     color: white;
@@ -559,6 +585,181 @@ left: 1rem;
 justify-content: center;
 display: flex;
 }
+
+#question input {
+    width: 30rem;
+background-color: transparent;
+padding: 0.1rem;
+margin: 0.3rem;
+height: 2rem;
+color: blue;
+border-color: #525162;
+}
+#question input:focus-within + label  ,
+#question input:not(:placeholder-shown) + label
+{
+    color: rgb(255, 255, 255) !important;
+    font-size:1.5rem ;
+    transform: scale(0.8) translateY(-1rem) translateX(-5rem) !important;
+}
+
+
+#question {
+  position: relative;
+}
+#question p {
+  margin-bottom: 1rem;
+  font-family: cursive;
+  color: rgb(215, 6, 6);
+margin-bottom: 1rem;
+font-family: cursive;
+font-size: 2rem;
+font-weight: bold;
+text-shadow: 1px 2.2px red;
+opacity: 0.6;
+font-family: cursive;
+
+
+}
+#first_nav{
+    height: 30rem !important;
+
+}
+#first_nav .body_contact .field small {
+  margin: 0.2rem;
+  font-family: cursive;
+
+}
+#first_nav .body_contact .field svg {
+  width: 13rem;
+  height: 2rem;
+  position: absolute;
+  right: -4.5rem;
+  margin-top: 10px;
+  color: #ff8585;
+}
+.field input:focus ~ svg,
+.field input:not(:placeholder-shown) ~ svg {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+.field textarea:focus ,
+.field textarea:not(:placeholder-shown)  {
+   border-color: white !important;
+   z-index: 500;
+}
+.field textarea{
+    color: white;
+}
+#personal::after{
+    margin-left: 1rem;
+}
+#timing::after{
+    margin-left: 2rem;
+}
+
+.third_page{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../static/images/netflixbkg.png");
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+}
+#back{
+    z-index: 500;
+    position: relative;
+    background-color: transparent;
+    color: blue;
+    width: 15rem;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+#back:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#submit{
+    transition: all 0.3s;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: white;
+}
+#circle img ,#circle2 img{
+    position: relative;
+top: 0;
+left: 0;
+    width: 25rem;
+height: 25rem;
+opacity: 0.3;
+bottom: 25rem;
+margin-bottom: 40rem;
+top: -6rem;
+left: 0;
+}
+#circle p{
+    font-family: cursive;
+color: white;
+opacity: 0.8;
+font-size: 1rem;
+position: relative;
+top: 6rem;
+position: absolute;
+opacity: 0.3;
+text-align: center;
+left: 15rem;
+}
+#circle,#circle2 {
+  margin: 0;
+  display: flex;
+  width: 25rem;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#circle2{
+    position: absolute;
+    position: absolute;
+left: 75rem;
+top: 5rem;
+display: ruby-base;
+top: 8rem;
+}
+
+#best{
+    opacity: 0.8;
+    color: white;
+}
+#best::after{
+    content: " ";
+width: 5rem;
+position: absolute;
+display: inline-block;
+height: 10px;
+z-index: 500;
+background-color: red;
+bottom: -5px;
+left: 32.4rem;
+background-image: linear-gradient(to right, rgb(34, 0, 183) 0%, rgba(0,0,0,0) 50%, rgb(29, 0, 135) 100%);
+border-radius: 100%;
+}
+#icon{
+    width: 15rem;
+  height: 15rem;
+  position: absolute;
+  left: 25rem;
+  top: 4rem;
+  opacity: 0.4;
+}
+
 </style>
 
 <body onload="onPageLoad()">
@@ -587,8 +788,12 @@ display: flex;
                                 <h1>Contact us</h1>
                             </div>
                             <div class="body_contact">
+                                <div id="circle">
+                                    <img	src="{% static  'images/circle.png' %}">
+                                        <p>Mindweb</p>
+                                </div>
                                 <div class="field">
-                                    <h3>Personal contact</h3>
+                                    <h3 id="personal">Personal contact</h3>
                                     <small>Number :0776774290</small>
                                     <small>Email:robifodor1234576@yahoo.com</small>
                                     <small>Gmail:robifodor5519@gmail.com</small>
@@ -596,24 +801,41 @@ display: flex;
                                     <small>Instagram:robifodor_19</small>
                                 </div>
                                 <div class="field">
-                                    <h3>Timing</h3>
+                                    <h3 id="timing">Timing</h3>
                                     <small>Monday-saturday 8:00-18:00</small>
                                     <small>Sunday:12:00 - 18:00</small>
 
                                 </div>
-                                <div class="field">
+                                <div class="field" id="question">
+                                    <form action="" method="POST">
                                     <p>Enter your questions</p>
-                                    <input type="text">
-                                    <input type="text">
-                                    <input type="text">
-                                    <input type="button">
+                                    <div class="field">
+                                        <input name="name" placeholder=""  type="text">
+                                        <label for="">Full name...</label>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><circle cx="24" cy="11" r="7"/><path d="M4 41c0-8.837 8.059-16 18-16m9 17l10-10l-4-4l-10 10v4h4Z"/></g></svg>
+
+                                    </div>
+                                    <div class="field">
+                                        <input placeholder="" type="text">
+                                        
+                                        <label name="contact" for="">Gmail...</label>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M11 11L3 6v10h10v2H3q-.825 0-1.413-.588T1 16V4q0-.825.588-1.413T3 2h16q.825 0 1.413.588T21 4v5h-2V6l-8 5Zm0-2l8-5H3l8 5Zm8 13q-1.65 0-2.825-1.175T15 18v-4.5q0-1.05.725-1.775T17.5 11q1.05 0 1.775.725T20 13.5V18h-2v-4.5q0-.2-.15-.35T17.5 13q-.2 0-.35.15t-.15.35V18q0 .825.588 1.413T19 20q.825 0 1.413-.588T21 18v-4h2v4q0 1.65-1.175 2.825T19 22ZM3 6V4v12V6Z"/></svg>
+
+                                    </div><div class="field">
+                                        <textarea name="message" placeholder=" " name="" id="" cols="30" rows="10"></textarea>
+                                        <input id="submit" type="submit" value="send">
+                                    </div>
+
+                                </form>
                                 </div>
                             </div>
                     </div>
                     <div id="second_nav" class="hide_part">
                         <div class="first">
                             <h2>We offer a variaty of content that you can expect</h2>
-
+                            <div id="circle2">
+                                <img	src="{% static  'images/circle2.png' %}">
+                            </div>
                         </div>
                         <div class="second">
                             <div class="field">
@@ -634,6 +856,12 @@ display: flex;
                                  <small>Partners in creating your dream </small>
                                <small>And to stay together for future projects</small>
                              </div>
+                             <div class="field">
+                                <h3>PRICES!</h3>
+                                <small>Stop selling your car for nothing!</small>
+                                 <small>With only 5-10 E/webisite with a full back-end </small>
+                               <small>And a spectacular front end you can get it!</small>
+                             </div>
                            
                           
                             
@@ -644,7 +872,9 @@ display: flex;
                             
                     </div>
                     <div id="fourth_nav" class="hide_part">
-                            <h3>We are here to develop the best product you can get</h3>
+                        <img id="icon"	src="{% static  'images/icon.png' %}">
+
+                            <h3>We are here to develop the <span id="best">best</span> product you can get</h3>
                             <h4>Be our next happy customer!</h4>
                             <a id="find_more" href="#">Find more...</a>
                             <div class="smallfield">
@@ -667,7 +897,9 @@ display: flex;
 
         </div>
         <h1 id="title_page2">It's all about <span id="title2span">dedication...</span></h1>
+
         <div class="movingpage2">
+            <button id="back">back</button>
             <h3  class="description">We are a small group of professional developers</h3>
             <h3 class="description">with the passion to create and develop the best app</h3>
             <h3 class="description">you can get at the best prices !</h3>
@@ -686,8 +918,13 @@ display: flex;
     </div>
 
     
+
+    <div class="third_page">
+
+    </div>
 </body>
 <script>
+    const back=document.getElementById("back");
     const logo=document.getElementById("logo");
     const wrapper=document.getElementById("wrapper");
     const down=document.getElementById("down");
@@ -879,24 +1116,29 @@ setTimeout(show_div, 500);
         function three()
         {
             down.classList.toggle("hide_page_up");
+            black2.classList.toggle("show_content")
+
 
         }
         const backgroundblk=document.getElementById("backgroundblk");
+        const black2=document.getElementById("black2");
+
         function four()
         {
-            wrapper.classList.add("hide");
+            wrapper.classList.toggle("hide");
+
         }
 
 
 
-        const black2=document.getElementById("black2");
         const page2=document.getElementById("second_page");
         const title2=document.getElementById("title_page2");
        // const description=document.getElementsByClassName("description");
         function second_page_appear()
         {
-            black2.classList.add("show_content")
             page2.classList.add("show_second_page");
+            page2.classList.remove("hide_page_up");
+            page2.classList.remove("delete");
         }
         function second_page_title_appear()
         {
@@ -937,19 +1179,28 @@ setTimeout(show_div, 500);
                },2000);
                
                setTimeout(()=>{
-               descr[descr.length-1].classList.add("bigger");
+               descr[descr.length-1].classList.toggle("bigger");
 
 
                 setTimeout(()=>{
-                    descr[descr.length-1].classList.add("hide");
+                    descr[descr.length-1].classList.toggle("hide");
                 },3000);
 
                },26000);
 
-               
-
+             
+               setTimeout(()=>{
+                for(var i=0;i<descr.length;i++)
+                    {
+                        
+                        descr[i].classList.remove("text_up");
+                        descr[i].classList.remove("hide");
+                       
+                        }   
+               },45000);
             },2000);
-
+          
+            
                    // console.log(description[0].getAttribute("y"));
                 
         }
@@ -962,6 +1213,23 @@ setTimeout(show_div, 500);
         setTimeout(second_page_title_appear,1500);
         setTimeout(second_page_title_appear2,1600);
 
+        back.addEventListener("click",()=>{
+            page2.classList.add("hide_page_up");
+            page2.classList.add("delete");
+
+             Title_global.classList.remove("hide_page_up");
+
+             nvb.classList.remove("hide_page_up");
+            for(var i=0;i<hide_part.length;i++)
+            hide_part[i].classList.remove("hide_page_up");
+
+            down.classList.remove("hide_page_up");
+            wrapper.classList.remove("hide");
+            title2.classList.remove("color_title2");
+                title2span.classList.remove("color_span2");
+
+
+        })
 
 
 
